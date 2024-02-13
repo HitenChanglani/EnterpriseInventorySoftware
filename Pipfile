@@ -1,0 +1,18 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "*"
+django-debug-toolbar = "*"
+pyjwt = "*"
+djangorestframework = "*"
+django-rest-passwordreset = "*"
+psycopg2 = "*"
+py-mysql2pgsql = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"
