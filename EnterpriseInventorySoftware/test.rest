@@ -1,0 +1,59 @@
+POST http://127.0.0.1:8000/register/
+Content-Type: application/json
+
+{"username": "TestUser", "password": "Test@123", "email": "testuser@test.com"}
+
+###
+
+
+
+POST http://127.0.0.1:8000/login/
+Content-Type: application/json
+
+{"username": "TestUser", "password": "Test@123"}
+
+###
+
+
+
+POST http://127.0.0.1:8000/logout/
+Content-Type: application/json
+Authorization: Token c859c735c1860418e2a2a75f93b5bce98c8c84ec
+
+###
+
+
+
+POST http://127.0.0.1:8000/items/category/
+Content-Type: application/json
+Authorization: Token c859c735c1860418e2a2a75f93b5bce98c8c84ec
+
+{"name": "large-cap"}
+
+###
+
+
+
+GET http://127.0.0.1:8000/items/category/
+Content-Type: application/json
+Authorization: Token c859c735c1860418e2a2a75f93b5bce98c8c84ec
+
+###
+
+
+
+POST http://127.0.0.1:8000/items/item/
+Content-Type: application/json
+Authorization: Token c859c735c1860418e2a2a75f93b5bce98c8c84ec
+
+{"sku": "MSFT", "name": "Microsoft", "availableStock": 25, "category": "large-cap", "tags": ["stock", "ESPP"]}
+
+###
+
+
+
+GET http://127.0.0.1:8000/items/item/
+Content-Type: application/json
+Authorization: Token c859c735c1860418e2a2a75f93b5bce98c8c84ec
+
+###
